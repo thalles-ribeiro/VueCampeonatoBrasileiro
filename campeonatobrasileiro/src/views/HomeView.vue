@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <Conteudo />
-    <p>larissa</p>
   </div>
 </template>
 
@@ -18,5 +17,10 @@ export default {
 </script>
 
 <style scoped>
-
+  .home{
+    background-color: blue;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
 </style>

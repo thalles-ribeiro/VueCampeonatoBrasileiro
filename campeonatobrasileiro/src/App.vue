@@ -1,9 +1,13 @@
 <template>
   <div class="app">
-    <Navbar />
-    <router-view/>
+    <div class="nav">
+      <Navbar />
+    </div>
+    <div class="router">
+      <router-view/>
+    </div>
   </div>
-</template> sim.. pode crer.. e o bom é  qpegando de la ele ja vem responsivel
+</template>
 
 <script>
 import HomeView from '@/views/HomeView.vue'
@@ -20,5 +24,10 @@ export default {
 </script>
 
 <style scoped>
-
+ .router{
+   display: flex;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+ }
 </style>
