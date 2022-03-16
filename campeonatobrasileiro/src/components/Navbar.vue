@@ -37,9 +37,9 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab>SOBRE</v-tab>
+          <v-tab><router-link to="/">HOME</router-link></v-tab>
           <v-tab>SERIE A</v-tab>
-          <v-tab>CLASSIFICAÇÃO</v-tab>
+          <v-tab><router-link to="/classificacao">CLASSIFICAÇÃO</router-link></v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -84,6 +84,7 @@
 
 <script>
   export default {
+    name:'navbar',
     data: () => ({
       drawer: false,
       group: null,
@@ -92,5 +93,7 @@
 </script>
 
 <style scoped>
-
+  #v-tab{
+    text-decoration: none;
+  }
 </style>

@@ -1,12 +1,14 @@
 <template>
-  <container>
-    <p>ola</p>
-  </container>
+  <div class="home">
+    <p>ok</p>
+  </div>
 </template>
 
 <script>
+
+
 export default {
-  name:'conteudo'
+  name:'classificacao'
 }
 </script>
 

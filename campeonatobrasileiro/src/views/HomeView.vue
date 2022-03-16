@@ -1,23 +1,32 @@
 <template>
-  <main>
-    <Navbar />
+  <div class="home">
     <Conteudo />
-    
-  </main>
+    <p>larissa</p>
+    <img :src='times.escudo'>
+  </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Conteudo from './components/Conteudo.vue'
+import Conteudo from '@/components/Conteudo.vue'
 
 
-export default{
-  name:'HomeView',
-  components:{
-    Navbar,
+export default {
+  name: 'HomeView',
+  components: {
     Conteudo,
   },
-
+  data(){
+    return{
+      times:[]
+    }
+  },
+  created(){
+    fetch('https://hackthon-decola.firebaseio.com/clubes-lista.json?print=pretty')
+    .then(resultado => resultado.json()) 
+    .then(json => {
+      this.times = json;
+    });
+  }
 }
 </script>
 

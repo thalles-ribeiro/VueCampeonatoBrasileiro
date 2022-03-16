@@ -1,16 +1,20 @@
 <template>
   <div class="app">
-    <HomeView />
+    <Navbar />
+    <router-view/>
   </div>
-</template>
+</template> sim.. pode crer.. e o bom é  qpegando de la ele ja vem responsivel
 
 <script>
-import HomeView from '.src/views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
+import Navbar from '@/components/Navbar.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HomeView
+    HomeView,
+    Navbar
   }
 }
 </script>
