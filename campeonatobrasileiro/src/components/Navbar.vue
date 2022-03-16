@@ -37,8 +37,8 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab>JOGOS</v-tab>
-          <v-tab>TIMES</v-tab>
+          <v-tab>SOBRE</v-tab>
+          <v-tab>SERIE A</v-tab>
           <v-tab>CLASSIFICAÇÃO</v-tab>
         </v-tabs>
       </template>
@@ -75,9 +75,9 @@
     <v-sheet
       id="scrolling-techniques-3"
       class="overflow-y-auto"
-      max-height="600"
+      max-height="250"
     >
-      <v-container style="height: 1000px;"></v-container>
+      <v-container style="height: 900px;"></v-container>
     </v-sheet>
   </v-card>
 </template>

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Navbar />
+    <Home-view />
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import HomeView from './views/HomeView.vue'
 
 export default {
   name: 'CB',
   components: {
-    Navbar
+    HomeView
   }
 }
 </script>
