@@ -5,13 +5,10 @@
 </template>
 
 <script>
-
-
-export default {
-  name:'classificacao'
-}
+  export default {
+    name:'classificacao'
+  }
 </script>
 
 <style scoped>
-
 </style>
