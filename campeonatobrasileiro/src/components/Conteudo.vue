@@ -1,6 +1,6 @@
 <template>
   <container>
-    <h2>TIMES BRASILEIROS</h2>
+    <h2>MELHORES TIMES BRASILEIROS</h2>
     <div class="itens" v-for="item of times" :key="item.id"> <!--A cada posiçao da lista equipes(variavel declarada no array, o resultado vai exibir nome,escudo e pontos-->
      <v-card
         class="card" 
