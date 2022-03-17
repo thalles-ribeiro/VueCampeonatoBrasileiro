@@ -18,8 +18,9 @@ export default {
 
 <style scoped>
   .home{
-    background-color: blue;
+    background-color: rgb(211, 211, 211);
     width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
   }

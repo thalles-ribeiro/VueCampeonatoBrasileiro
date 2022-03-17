@@ -21,9 +21,9 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab><router-link to="/">HOME</router-link></v-tab>
+          <v-tab to="/">HOME</v-tab>
           <v-tab>SERIE A</v-tab>
-          <v-tab><router-link to="/classificacao">CLASSIFICAÇÃO</router-link></v-tab>
+          <v-tab to="/classificacao">CLASSIFICAÇÃO</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -36,6 +36,7 @@
     data: () => ({
       drawer: false,
       group: null,
+      props: null,
     }),
   }
 </script>

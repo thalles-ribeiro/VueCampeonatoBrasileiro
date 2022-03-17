@@ -28,6 +28,7 @@ export default {
    display: flex;
    justify-content: center;
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
+   height: auto;
  }
 </style>
